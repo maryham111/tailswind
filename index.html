@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Maryham Portfolio</title>
+    <style>
+        body {
+            
+            background-image: url('https://img.freepik.com/premium-photo/ostrovsky-dawn-dawn-tropical-island-with-palm-trees-ocean_334333-6642.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="bg-black text-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Maryham</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="h-screen relative flex items-center justify-center">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+        <h2 class="text-4xl text-white font-bold relative">Maryham Portfolio!</h2>
+    </section>
+
+    <section id="skills" class="py-16 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center text-white font-bold mb-8">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <h3 class="font-semibold text-white">HTML</h3>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <h3 class="font-semibold text-white">CSS</h3>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <h3 class="font-semibold text-white">JavaScript</h3>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <h3 class="font-semibold text-white">React</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center text-white font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <img src="https://media.istockphoto.com/id/1143178653/photo/northern-lights-appear-over-mount-kirkjufell-with-kirkjufellfoss-waterfall-in-iceland.jpg?s=612x612&w=0&k=20&c=nKc8_QGR02dpgzZBmlf323Sn1_yRjdBrfgDpM6QXjQI=" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="font-semibold text-white mt-2">Lorem 1</h3>
+                    <p class="mt-1 text-gray-300">Brief description of the project.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <img src="https://images.pexels.com/photos/1010640/pexels-photo-1010640.jpeg?cs=srgb&dl=pexels-jimmy-teoh-294331-1010640.jpg&fm=jpg" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="font-semibold text-white mt-2">Lorem 2</h3>
+                    <p class="mt-1 text-gray-300">Brief description of the project.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <img src="https://i.ytimg.com/vi/HkPykDjw_uY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBurtjcKbLSGBJAzJ47jrO2aC8ANQ" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="font-semibold text-white mt-2">Lorem 3</h3>
+                    <p class="mt-1 text-gray-300">Brief description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center text-white font-bold mb-8">Contact Me</h2>
+            <form class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow">
+                <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                    <div class="flex-1">
+                        <label class="block text-sm font-semibold text-white mb-2" for="name">Name</label>
+                        <input class="w-full border border-gray-300 p-2 rounded" type="text" id="name" required>
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-sm font-semibold text-white mb-2" for="email">Email</label>
+                        <input class="w-full border border-gray-300 p-2 rounded" type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-white mb-2" for="message">Message</label>
+                    <textarea class="w-full border border-gray-300 p-2 rounded" id="message" rows="4" required></textarea>
+                </div>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <p class="text-sm">&copy; 2024 Maryham. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-blue-400 transition duration-300" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:text-blue-400 transition duration-300" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:text-blue-400 transition duration-300" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="hover:text-blue-400 transition duration-300" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+</body>
+</html>
